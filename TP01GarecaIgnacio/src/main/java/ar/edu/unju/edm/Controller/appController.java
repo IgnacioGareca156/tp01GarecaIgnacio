@@ -35,8 +35,6 @@ public class appController {
         fact.setNum(num);
         resultadoS = fact.calcularFactorial(num);
 
-        // factorialNew.setNum(num);
-        // resultadoS = factorialNew.calcularFactorial(num);
 
         model.addAttribute("resultadoS", resultadoS);
         return "answer";
@@ -45,7 +43,7 @@ public class appController {
     // Punto_2
     // Inyeccion de dependencias | ingestigar fnucionamiento 
     // @Autowired
-    // Bisiesto nuevoBisiesto;
+
 
     @GetMapping("/verificarBisiesto")
     public String verfificarBisiesto(@RequestParam(name = "anio") int anio, Model model){
